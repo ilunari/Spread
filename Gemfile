@@ -1,12 +1,16 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.12'
+gem 'rack'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+# i18n for JS related
+gem 'i18n-js'
+# Provides an array of preferred languages as given by the browser
+gem 'http_accept_language'
 gem 'sqlite3'
-
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -21,6 +25,10 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+group :production do
+  gem 'pg', '0.12.2'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
