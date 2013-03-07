@@ -1,7 +1,9 @@
 Spread::Application.routes.draw do
-  get "welcome/index"
-
+  resources :microposts
   resources :users
+
+  get "welcome/index"
+  get "posts/new"
 
 
   # The priority is based upon order of creation:
