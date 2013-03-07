@@ -11,6 +11,7 @@ gem 'i18n-js'
 # Provides an array of preferred languages as given by the browser
 gem 'http_accept_language'
 gem 'sqlite3'
+gem 'rspec-rails' 
 
 # Gems used only for assets and not required
 # in production environments by default.
